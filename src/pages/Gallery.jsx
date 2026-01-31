@@ -42,7 +42,7 @@ import JobMela4 from "../assets/megajobmela-4.png";
 import MedicalCamp from "../assets/medical-1.jpg";
 import MedicalCamp2 from "../assets/medical-2.jpg";
 import MedicalCamp3 from "../assets/medical-3.jpg";
-import MedicalCamp4 from "../assets/medical-4.jpg";
+import MedicalCamp4 from "../assets/medical4.jpg";
 import MedicalCamp5 from "../assets/medical-5.jpg";
 import MedicalCamp6 from "../assets/medical-6.jpg";
 
