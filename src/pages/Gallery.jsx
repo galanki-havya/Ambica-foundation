@@ -8,7 +8,7 @@ import Education from "../assets/methodology.png";
 
 import WaterSupply from "../assets/watersupply.png";
 import Annadanam from "../assets/annadanam.jpg";
-import Fans from "../assets/fans.jpg";
+import Fans from "../assets/community.jpg";
 import Borewells from "../assets/borewells.jpg";
 import PepperSpray from "../assets/pepperspray.png";
 import Financial from "../assets/financial.jpg";
