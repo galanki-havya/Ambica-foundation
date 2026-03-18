@@ -32,11 +32,11 @@ export default function Programs() {
       tag: "Community Lifeline"
     },
     {
-      title: "Annadhanam Program",
-      desc: "Serving freshly prepared meals to those in need at hospitals and during relief operations to ensure no one sleeps hungry.",
+      title: "Social Welfare & Relief",
+      desc: "Providing a lifeline through old age home support, fan distribution, and daily Annadanam to ensure dignity and comfort for all.",
       img: foodImg,
       color: "border-primary",
-      tag: "Daily Nutrition"
+      tag: "Serving Humanity"
     },
     {
       title: "Pratibha Awards",

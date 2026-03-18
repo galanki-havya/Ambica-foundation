@@ -95,8 +95,8 @@ const photos = [
       album: [{url: MedicalCamp}, {url: MedicalCamp2}, {url: MedicalCamp3}, {url: MedicalCamp4}, {url: MedicalCamp5}, {url: MedicalCamp6}, {url: BloodDonation}, {url: BloodDonation1}]   
     },
     {
-      id: 9, category: "Community", url: Annadanam, title: "Annadanam & Relief",
-      desc: "Serving daily meals and providing flood relief supplies to vulnerable families.",
+      id: 9, category: "Community", url: Annadanam, title: "Social Welfare & Relief",
+      desc: "Empowering lives through old age home support, fan distribution, and daily Annadanam for those in need.",
       album: [{url: Annadanam}, {url: OldAge}, {url: OldAge2}, {url: Fans}]
     },
   ];
