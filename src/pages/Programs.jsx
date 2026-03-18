@@ -1,32 +1,56 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import udyogaMelaImg from "../assets/mega-job.png"; 
-import medicalImg from "../assets/medical-camp.png";
-import careerImg from "../assets/womens-carrer.jpg";
+import udyogaMelaImg from "../assets/mega-job-mela.jpg"; 
+import medicalImg from "../assets/medical-2.jpg";
+import waterImg from "../assets/safe-water.jpg";
+import foodImg from "../assets/annadanam.jpg";
+import educationImg from "../assets/pratibha-awards.jpg";
+import natureImg from "../assets/disaster-relief.png";
 
 export default function Programs() {
   const programList = [
     {
       title: "Mega Udyoga Mela",
-      desc: "Our flagship recruitment drive connecting rural youth with global opportunities at companies like Foxconn and KIA.",
+      desc: "Our flagship recruitment drive connecting rural youth with global opportunities at companies like Foxconn, KIA, Amazon, and TATA.",
       img: udyogaMelaImg,
       color: "border-accent",
-      tag: "1,300+ Hired"
+      tag: "8,000+ Employed" 
     },
     {
-      title: "Free Medical Camps",
-      desc: "Providing essential diagnostic services and free medicine distribution to the elderly and rural poor in Anantapur.",
+      title: "Healthcare Support",
+      desc: "Regular free medical camps and medicine distribution for senior citizens and rural families across Anantapur.",
       img: medicalImg,
       color: "border-primary",
-      tag: "Weekly Service"
+      tag: "10,000+ Served"
     },
     {
-      title: "Women's Career Initiative",
-      desc: "Dedicated skill development and recruitment drives designed to ensure financial independence for women.",
-      img: careerImg,
+      title: "Safe Drinking Water",
+      desc: "Installing borewells, RO plants, and operating summer water tankers to end water scarcity in drought-prone regions.",
+      img: waterImg,
       color: "border-accent",
-      tag: "500+ Empowered"
+      tag: "Community Lifeline"
+    },
+    {
+      title: "Annadhanam Program",
+      desc: "Serving freshly prepared meals to those in need at hospitals and during relief operations to ensure no one sleeps hungry.",
+      img: foodImg,
+      color: "border-primary",
+      tag: "Daily Nutrition"
+    },
+    {
+      title: "Pratibha Awards",
+      desc: "Honoring and empowering meritorious SSC and Intermediate students with financial aid for higher education.",
+      img: educationImg,
+      color: "border-accent",
+      tag: "Educational Aid"
+    },
+    {
+      title: "Nurturing Nature",
+      desc: "Combatting deforestation and water scarcity through regular plantation drives and environmental awareness.",
+      img: natureImg,
+      color: "border-primary",
+      tag: "50,000+ Saplings"
     }
   ];
 
@@ -39,8 +63,8 @@ export default function Programs() {
           <h2 className="text-accent font-bold tracking-[0.3em] uppercase text-[10px] mb-2">Our Work</h2>
           <h1 className="text-3xl md:text-5xl font-black mb-3 tracking-tighter uppercase">Impact Initiatives</h1>
           <p className="text-sm md:text-base opacity-80 max-w-xl mx-auto font-light leading-relaxed">
-            Since 2009, we have implemented sustainable programs that bridge the gap between 
-            industrial demand and community needs.
+            Since 2009, we have implemented sustainable programs that provide essential support 
+            in healthcare, education, livelihood, and social welfare.
           </p>
         </div>
       </section>
@@ -71,7 +95,7 @@ export default function Programs() {
                   {item.desc}
                 </p>
                 <Link 
-                  to="/contact" 
+                  to="/gallery" 
                   className="inline-flex items-center gap-2 font-black text-[10px] uppercase tracking-widest text-primary group-hover:gap-3 transition-all"
                 >
                   Learn More <span className="text-accent text-lg">→</span>
@@ -81,8 +105,6 @@ export default function Programs() {
           ))}
         </div>
       </section>
-
-      
     </div>
   );
 }

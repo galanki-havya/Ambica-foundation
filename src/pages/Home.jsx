@@ -9,12 +9,11 @@ import methodologyImg from "../assets/methodology.png";
 import ambulanceImg from "../assets/emergency.png";
 import jobMelaImg from "../assets/megajobmela.png";
 import educationImg from "../assets/notebooks.png";
-import disasterImg from "../assets/disaster-relief.png";
+import waterImg from "../assets/safe-water.jpg"; 
 
 import gallery1 from "../assets/gallery-1.jpg";
 import gallery2 from "../assets/gallery-2.jpg";
 import gallery3 from "../assets/gallery-3.jpg";
-
 
 const SectionDivider = () => (
   <div className="w-full bg-white py-4">
@@ -23,7 +22,6 @@ const SectionDivider = () => (
     </div>
   </div>
 );
-
 
 const SectionDividerFinal = () => (
   <div className="w-full flex items-center justify-center py-12 bg-slate-50">
@@ -43,10 +41,10 @@ const SectionDividerFinal = () => (
 
 export default function Home() {
   const displayPrograms = [
-    { title: "Ambulance Services", image: ambulanceImg, desc: "Providing 24/7 free emergency medical transport to ensure timely healthcare for the rural poor in Anantapur.", link: "/programs" },
     { title: "Mega Udyoga Mela", image: jobMelaImg, desc: "Our flagship recruitment drive connecting rural youth with global opportunities at companies like Foxconn and KIA.", link: "/programs" },
-    { title: "Education Support", image: educationImg, desc: "Distributing notebooks and essential stationery to underprivileged students to empower their academic journey.", link: "/programs" },
-    { title: "Disaster Relief", image: disasterImg, desc: "Responding swiftly to floods and emergencies with food, medical aid, and essential supplies for those in need.", link: "/programs" }
+    { title: "Ambulance Services", image: ambulanceImg, desc: "Providing 24/7 free emergency medical transport to ensure timely healthcare for the rural poor.", link: "/programs" },
+    { title: "Safe Drinking Water", image: waterImg, desc: "Installing borewells and RO plants to provide clean, safe drinking water to drought-prone villages.", link: "/programs" },
+    { title: "Education Support", image: educationImg, desc: "Distributing notebooks and honoring meritorious students with Pratibha Awards for higher education.", link: "/programs" }
   ];
 
   return (
@@ -58,9 +56,9 @@ export default function Home() {
           <div className="bg-white rounded-2xl shadow-xl shadow-slate-200 grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-100 border border-slate-100">
             {[
               { label: "Years of Impact", val: "15+" },
-              { label: "Mega Udyoga Melas", val: "12+" },
-              { label: "Ambulance Calls", val: "240+" },
-              { label: "Lives Changed", val: "1000+" }
+              { label: "Youth Employed", val: "8,000+" }, 
+              { label: "Health Beneficiaries", val: "10,000+" }, 
+              { label: "Lives Impacted", val: "25k+" } 
             ].map((stat, i) => (
               <div key={i} className="py-6 text-center hover:bg-slate-50 transition-all group">
                 <h3 className="text-3xl font-black text-accent">{stat.val}</h3>
@@ -78,10 +76,10 @@ export default function Home() {
           <div className="md:w-1/2 text-left">
             <h4 className="text-accent font-bold uppercase tracking-widest text-xs mb-3">About Ambica Foundation</h4>
             <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
-              Serving Anantapur <br /> Since 2009.
+              Serving Anantapuramu <br /> Since 2009.
             </h2>
             <p className="text-slate-600 text-base mb-8 leading-relaxed">
-              We are dedicated to providing emergency ambulance services, organizing mega job melas, supporting education, and empowering women.
+              Founded on Gandhi Jayanthi by Sri Ambica G. Lakshminarayana (Hon'ble MP), we are dedicated to transforming lives through healthcare, employment, and sustainable community development.
             </p>
             <Link to="/about" className="bg-[#f2a33c] hover:bg-[#e0922b] text-white px-8 py-3 rounded-xl font-bold transition-all shadow-lg inline-block text-sm">
               Read Full Story
@@ -95,7 +93,7 @@ export default function Home() {
 
       <SectionDivider />
 
-      <section className="py-12 px-6 bg-slate-50 border-y border-slate-200"> {/* Reduced py-20 to py-12 */}
+      <section className="py-12 px-6 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2 space-y-6">
             <div className="inline-block px-4 py-1.5 bg-accent/10 rounded-full">

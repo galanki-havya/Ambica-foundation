@@ -53,58 +53,55 @@ function Gallery() {
   const [filter, setFilter] = useState("All");
   const [activeAlbum, setActiveAlbum] = useState(null);
 
-  const photos = [
+const photos = [
     {
       id: 1, category: "Recognition", url: AwardCeremony, title: "Ambica Achievements",
-      desc: "Celebrating the achievements of Ambica Foundation and its impact on rural communities.",
-      album: [{url: AwardCeremony}, {url: AwardCeremony1}]
+      desc: "Chairman receiving the Best NGO Award from Hon’ble Minister Payyavula Keshav Garu.",
+      album: [{url: AwardCeremony}, {url: AwardCeremony1}, {url: AwardCeremony2}]
     },
     { 
       id: 2, category: "Healthcare", url: AmbulanceService, title: "Emergency Ambulance Service",
-      desc: "Launched in 2009 to provide affordable medical transport to Bangalore & Puttaparthi.",
+      desc: "24/7 free emergency medical transport serving the rural poor since 2009.",
       album: [{url: AmbulanceService}, {url: AmbulanceService1}]
     },
     {
-      id: 3, category: "Job Mela", url: MegaJobMela, title: "Job Mela Events",
-      desc: "Connecting rural youth with employment opportunities through job fairs.",
+      id: 3, category: "Job Mela", url: MegaJobMela, title: "Mega Udyoga Melas",
+      desc: "Connecting 8,000+ rural youth with global leaders like KIA, Foxconn, and TATA.",
       album: [{url: MegaJobMela}, {url: JobMela}, {url: JobMela1}, {url: JobMela2}, {url: JobMela3}, {url: JobMela4}]
     },
-    
     { 
-      id: 4, category: "Community", url: WaterSupply, title: "Community Care",
-      desc: "Mobile units providing clean drinking water to drought-hit rural areas.",
-      album: [{url: WaterSupply}, {url: Annadanam}, {url: Fans}, {url: Borewells}, {url: PepperSpray}, {url: Financial}]
+      id: 4, category: "Women Empowerment", url: PepperSpray, title: "Empowering Women",
+      desc: "Distributing sewing machines for self-reliance and pepper spray for safety.",
+      album: [{url: PepperSpray}, {url: Financial}]
     },
     { 
-      id: 5, category: "Sports", url: SportsTournament, title: "Tournaments",
-      desc: "Promoting rural youth through district-level Cricket and Volleyball tournaments.",
+      id: 5, category: "Sports", url: SportsTournament, title: "Rural Sports Growth",
+      desc: "Promoting grassroots talent through Cricket, Kabaddi, and Volleyball tournaments.",
       album: [{url: SportsTournament}, {url: SportsTournament3}, {url: SportsTournament1}, {url: SportsTournament2}, {url: SportsTournament5}, {url: SportsTournament4}]
     },
     { 
-      id: 6, category: "Healthcare", url: BloodDonation, title: "Mega Blood Donation Camps",
-      desc: "Over 250 pledges for organ donation and regular blood donation drives.",
-      album: [{url: BloodDonation4}, {url: BloodDonation}, {url: BloodDonation2}, {url: BloodDonation3}, {url: BloodDonation1}, {url: BloodDonation5}]
+      id: 6, category: "Environment", url: Borewells, title: "Nurturing Nature",
+      desc: "Planting over 50,000+ saplings and installing borewells for sustainable water.",
+      album: [{url: WaterSupply}, {url: Borewells}] 
     },
     { 
-      id: 7, category: "Education", url: BookDistribution, title: "Rural School Support",
-      desc: "Distribution of notebooks and stationery to students in Bisalamanepalli and Obulapuram.",
+      id: 7, category: "Education", url: BookDistribution, title: "Pratibha Awards",
+      desc: "Honoring meritorious SSC and Intermediate students with financial aid and awards.",
       album: [{url: BookDistribution}, {url: Education}]
     },
-    {
-      id: 8, category: "Healthcare", url: MedicalCamp, title: "Medical Camps",
-      desc: "Organizing medical camps to provide free health check-ups and medicines.",
-      album: [{url: MedicalCamp}, {url: MedicalCamp2}, {url: MedicalCamp3}, {url: MedicalCamp4}, {url: MedicalCamp5}, {url: MedicalCamp6}]   
+    { 
+      id: 8, category: "Healthcare", url: MedicalCamp, title: "Mega Medical Camps",
+      desc: "30+ camps conducted, providing free health check-ups and medicines to 10,000+ people.",
+      album: [{url: MedicalCamp}, {url: MedicalCamp2}, {url: MedicalCamp3}, {url: MedicalCamp4}, {url: MedicalCamp5}, {url: MedicalCamp6}, {url: BloodDonation}, {url: BloodDonation1}]   
     },
     {
-      id: 9, category: "Community", url: OldAge, title: "Old Age Home",
-      desc: "Supporting elderly care through regular visits and essential supplies.",
-      album: [{url: OldAge}, {url: OldAge2}]
+      id: 9, category: "Community", url: Annadanam, title: "Annadanam & Relief",
+      desc: "Serving daily meals and providing flood relief supplies to vulnerable families.",
+      album: [{url: Annadanam}, {url: OldAge}, {url: OldAge2}, {url: Fans}]
     },
-    
-    
   ];
 
-  const categories = ["All", "Recognition", "Healthcare", "Education", "Job Mela", "Community", "Sports"];
+  const categories = ["All", "Recognition", "Healthcare", "Education", "Job Mela", "Women Empowerment", "Environment", "Community", "Sports"];
   const filteredPhotos = filter === "All" ? photos : photos.filter(p => p.category === filter);
 
   if (activeAlbum) {
