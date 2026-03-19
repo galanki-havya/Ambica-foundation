@@ -76,7 +76,7 @@ export default function Home() {
           <div className="md:w-1/2 text-left">
             <h4 className="text-accent font-bold uppercase tracking-widest text-xs mb-3">About Ambica Foundation</h4>
             <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
-              Serving Anantapuramu <br /> Since 2009.
+              Serving Anantapur <br /> Since 2009.
             </h2>
             <p className="text-slate-600 text-base mb-8 leading-relaxed">
               Founded on Gandhi Jayanthi by Sri Ambica G. Lakshminarayana (Hon'ble MP), we are dedicated to transforming lives through healthcare, employment, and sustainable community development.
